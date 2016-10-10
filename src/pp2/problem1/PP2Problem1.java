@@ -27,7 +27,7 @@ public class PP2Problem1 {
     public static void verificarAño(int a){
         if (a % 4 == 0 && a % 100 != 0 || a % 400 == 0){
               muestraVeredicto("es bisiesto");
-    }else
+    }elsejj
               muestraVeredicto("no es bisiesto");
     }
     public static void muestraVeridicto(int a){
