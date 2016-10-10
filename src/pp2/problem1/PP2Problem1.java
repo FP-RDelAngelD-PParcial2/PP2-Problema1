@@ -15,7 +15,7 @@ public class PP2Problem1 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-    
+    muestraVeredicto(verificarAño(solicitarDatos(anio)));
     }
     public static int solicitarDatos(String d){
         int miDato;
@@ -24,20 +24,13 @@ public class PP2Problem1 {
         miDato= entradaEscaner.nextInt();
         return miDato;
     }
-    public static String verificarAño(int a){
-        
-        if (a % o/4 == 0) && (a % 100 != 0) || (a % 400 == 0){
-        
-    }
-        return 
+    public static void verificarAño(int a){
+        if (a % 4 == 0 && a % 100 != 0 || a % 400 == 0){
+              muestraVeredicto("es bisiesto");
+    }else
+              muestraVeredicto("no es bisiesto");
     }
     public static void muestraVeridicto(int a){
-        String b;
-        if (a==1){
-            b="bisiesto";
-        }else{
-            b="no es bisiesto";
-        }
-        System.out.print ("El año es " + b);
+        System.out.print ("El año " + b);
     }
 }
